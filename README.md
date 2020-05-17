@@ -18,3 +18,4 @@ In this repository, you can see examples of C language which explained with comm
 - 000 - Prints Hello World!!!
 - 001 - Celsius to fahrenfeit converter.
 - 002 - Space, tab and newline counter.
+- 003 - Counts the words, lines, and characters of the input.
