@@ -20,3 +20,4 @@ In this repository, you can see examples of C language which explained with comm
 - 002 - Space, tab and newline counter.
 - 003 - Counts the words, lines, and characters of the input.
 - 004 - Prints one word per line after write somethng and press Enter.
+- 005 - Prints horizontal histogram for every words.
