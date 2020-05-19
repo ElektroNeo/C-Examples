@@ -6,8 +6,12 @@ In this repository, you can see examples of C language which explained with comm
 - Select `mingw32-base-bin` and install it.
 - Add `C:\MinGW\bin` to Path System Environment Variable
 - Open PowerShell and go to the code folder.
-- Write `gcc main.c -o main` to compile code
-- Write `.\main.c` to run program.
+- Write `gcc main.c -o main ; .\main.c` to compile and run code.
+
+## How to Compile & Run (Ubuntu & Debian)
+- Open Terminal and run `sudo apt-get install build-essential` code.
+- Go to code folder.
+- Write `gcc main.c -o main && ./main` and press Enter to compile and run code.
 
 ### Compiler and Editor Information
 - GCC Version: (MinGW.org GCC Build-20200227-1) 9.2.0
