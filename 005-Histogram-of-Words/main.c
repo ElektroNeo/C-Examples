@@ -1,20 +1,23 @@
 /*
 005 - Prints horizontal histogram for every words.
-Version: 1.0
+Version: 1.1
 */
 #include <stdio.h>
 
 // Max. length of words in one line
 #define MAX_WORD_LENGTH 50
+#define IN  1
+#define OUT 0
+
 
 int main()
 {
     // Variable definitions
-    int c, cc = 0, i = 0, wordCounter = 1;
+    int c, cc = 0, i = 0, wordCounter = 1, state = OUT;
     int word[MAX_WORD_LENGTH];
 
-    printf("Write something and press Enter.");
-    printf("Press Ctrl+C, Ctrl+D or Ctrl+Z to end...\n\n");
+    printf("Write something and press enter. On Windows press Enter then Ctrl+Z"); 
+    printf("\nand then Enter, on Linux press Ctrl+D to end...\n\n");
 
     // Count loop
     while ((c = getchar()) != EOF)
@@ -22,16 +25,25 @@ int main()
         // Count chars
         if (c != ' ' && c != '\t' && c != '\n')
         {
+            // State IN means that curser is in the word
+            state = IN;
             cc++; // Character counter
         }
 
-        // If input is white character then;
+        // If input is whitespace character then;
         if (c == ' ' || c == '\t' || c == '\n')
         {
-            // Get character counter to word array
-            word[i++] = cc;
-            // Clear character counter
-            cc = 0;
+            // Checks that multiple whitespaces not occured
+            if (state == IN)
+            {
+                // State OUT means that curser is out of the word
+                state = OUT;
+                // Get character counter to word array
+                word[i++] = cc;
+                // Clear character counter
+                cc = 0;
+            }
+            
         }
 
         // If new line appears then print histogram
@@ -46,7 +58,7 @@ int main()
                 }
                 printf("\n");
             }
-            printf("\n\n");
+            printf("\n");
             i = 0;
         }
     }

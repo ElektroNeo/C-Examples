@@ -1,6 +1,6 @@
 /*
 002 - Space, tab and newline counter.
-Version: 1.0
+Version: 1.1
 */
 #include <stdio.h>
 
@@ -9,7 +9,8 @@ int main()
     // Variable definitions
     int c, sc = 0, tc = 0, nc = 0;
 
-	printf("Write something. Press Ctrl+C, Ctrl+D or Ctrl+Z to end...\n\n");
+	printf("Write something. On Windows press Enter then Ctrl+Z"); 
+    printf("\nand then Enter, on Linux press Ctrl+D to end...\n\n");
 
     // Count loop
     while ((c = getchar()) != EOF)

@@ -1,6 +1,6 @@
 /*
 004 - Prints one word per line after write somethng and press Enter.
-Version: 1.0
+Version: 1.1
 */
 #include <stdio.h>
 
@@ -12,7 +12,8 @@ int main()
     // Variable declerations
     int c, wc = 0, state = OUT;
 
-    printf("Write sentence and press Enter. To exit program press Ctrl+C, Ctrl+D or Ctrl+Z...\n\n");
+    printf("Write something and press enter. On Windows press Enter then Ctrl+Z"); 
+    printf("\nand then Enter, on Linux press Ctrl+D to end...\n\n");
 
     while ((c = getchar()) != EOF)
     {

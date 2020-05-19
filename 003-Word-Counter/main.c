@@ -1,6 +1,6 @@
 /*
 003 - Counts the words, lines, and characters of the input.
-Version: 1.0
+Version: 1.1
 */
 #include <stdio.h>
 
@@ -12,8 +12,8 @@ int main()
     // Variable definitions
     int c, wc = 1, lc = 0, cc = 0, state = IN;
 
-    printf("Write something. Press Ctrl+C, Ctrl+D or Ctrl+Z to end...\n");
-    printf("Write at least one line with character befor end...\n\n");
+    printf("Write something and press enter. On Windows press Enter then Ctrl+Z"); 
+    printf("\nand then Enter, on Linux press Ctrl+D to end...\n\n");
 
     // Count loop
     while ((c = getchar()) != EOF)
