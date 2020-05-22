@@ -28,3 +28,4 @@ In this repository, you can see examples of C language which explained with comm
 - 006 - Prints horizontal histogram for every chars.
 - 007 - Removes multiple spaces, blank lines and tabs or multiple tabs (replace with space).
 - 008 - Reverse input line string and print it.
+- 009 - Divide long lines to two or more lines.
