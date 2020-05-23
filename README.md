@@ -30,3 +30,6 @@ In this repository, you can see examples of C language which explained with comm
 - 008 - Reverse input line string and print it.
 - 009 - Divide long lines to two or more lines.
 - 010 - Removes one line, inline and multiline comments in C code.
+- 011 - Converts lover character to upper character.
+- 012 - Converts upper character to lower character.
+- 013 - Converts escape character to visible escape sequence character.
