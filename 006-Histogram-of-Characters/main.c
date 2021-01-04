@@ -8,14 +8,7 @@ int main()
 {
     // Variable definitions
     int c;
-    int chars[96]; // chars[0] is space and chars[95] is ~
-
-    // Reset array values
-    for (int count = 0; count < 96; count++)
-    {
-        chars[count] = 0;
-    }
-    
+    int chars[96] = { 0 };  // Reset array values
 
     printf("Write something. On Windows press Enter then Ctrl+Z"); 
     printf("\nand then Enter, on Linux press Ctrl+D to end...\n\n");
