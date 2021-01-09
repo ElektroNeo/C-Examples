@@ -37,3 +37,5 @@ In this repository, you can see examples of C language which explained with comm
 - 015 - Basically encrypt and decrypt the string.
 - 016 - Prints ASCII value of a given character.
 - 017 - Prints length of a given string.
+- 018 - Converts binary string to decimal number.
+- 019 - Prints sum of digit for a given number.
